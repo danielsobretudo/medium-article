@@ -1,54 +1,23 @@
-@media(max-width: 1200px) {
-.container {
-  width: 960px;
-  }
+.banner {
+  background-image: url(https://source.unsplash.com/1800x400/?maracana);
+  height: 400px;
 }
 
-@media(max-width: 992px) {
-.container {
-  width: 740px;
-  }
-}
-
-@media(max-width: 768px) {
-.container {
-  width: 560px;
-  }
-}
-
-@media(max-width: 576px) {
-.container {
-  width: 400px;
-  }
-}
-
-.container .main-txt {
-  margin: 16px auto;
-  text-align: justify;
-}
-
-.image {
-  position: relative;
-  text-align: center;
-  color: #EEE;
+.banner-container {
   font-family: 'Open Sans', sans-serif;
+  padding: 100px 0;
+  color: #EEE;
+  text-align: center;
 }
 
-.img-txt {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px 16px;
-  border-radius: 5px;
-  background-color: rgba(0,0,0,0.3);
+.banner-txt {
+  border-radius: 8px;
+  background-color: rgba(0,0,0,0.5);
 }
 
-.txt-1 {
-  top: 50%;
-}
-
-.txt-2 {
-  top: 70%;
+.txt-container {
+  text-align: justify;
+  /*padding: 0 100px;*/
 }
 
 h3 {
@@ -74,4 +43,33 @@ a {
 
 a:hover {
   color: purple;
+}
+
+.banner-container, .txt-container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+@media(max-width: 1200px) {
+  .banner-container, .txt-container {
+    width: 920px;
+  }
+}
+
+@media(max-width: 992px) {
+  .banner-container, .txt-container {
+    width: 720px;
+  }
+}
+
+@media(max-width: 768px) {
+  .banner-container, .txt-container {
+    width: 516px;
+  }
+}
+
+@media(max-width: 576px) {
+  .banner-container, .txt-container {
+    width: 364px;
+  }
 }
